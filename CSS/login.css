@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/*font-family: "Libre Baskerville", serif;*/
+/* font-family: "Special Elite", system-ui; */
+/* font-family: "Bebas Neue", sans-serif; */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(90deg, rgba(179,221,233,1) 0%, rgba(167,214,228,1) 100%);
+    /* min-width: 320px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: white;
+    padding: 3%;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+    /* width: 30%;
+    margin-left: 35%;
+    margin-right: 35%; */
+    width: 460px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#titulo{
+    margin-bottom: 2px;
+    font-family: "Special Elite", system-ui;
+    font-size: 50px;
+    text-align: center;
+}
+
+.formlogin{
+    /* border: 3px solid red; */
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* width: 341.967;
+    height: 314; */
+}
+
+form label{
+    /* border: 2px solid blue; */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+form label#lembrarme{
+    font-size: 18px;
+}
+
+a#forgetpassword {
+    font-family: "Libre Baskerville", serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+a#registre{
+    font-family: "Libre Baskerville", serif;
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 16px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-left: 8px;
+}
+
+p#outraforma{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+form input{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 1px;
+
+}
+
+#conectado{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+input#conectado{
+    cursor: pointer;
+}
+
+#forgetpassword{
+
+    margin-left: 50px;
+}
+
+button#login{
+    margin-top: 30px;
+    font-size: 30px;
+    margin-bottom: 1em;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+button#login{
+    cursor: pointer;
+}
+
+.redessociais a{
+    margin: 10px;
+}
+.icones{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#criarconta{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+/* ============================ MEDIA QUERIES */
+
+@media only screen and (max-width: 992px){
+    body{
+
+    }
+    .container{
+        padding: 5%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    body{
+
+
+    }
+}
+
+@media only screen and (max-width: 576px){
+    body{
+
+    }
+    .container{
+        width: 90%;
+
+    }
+
+    #forgetpassword{
+        display: block;
+        text-align: left;
+        margin-left: 0;
+        margin-top: 10px;
+
+    }
+
+    #criarconta{
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #criarconta #registre {
+        margin-top: 10px;
+    }
+
+}
+
+
+
+
+
+

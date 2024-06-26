@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <title>PaginaLogin</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="titulo">FAZER LOGIN</h1>
+        <form class="formlogin">
+
+                <label for="usuario">Nome</label>
+                <input type="text" name="nomeusuario" id="nomeusuario" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" name="password" id="password" required>
+
+                <div id="conectado">
+                    <input type="checkbox" name="conectado" id="conectado">
+                    <label id="lembrarme" for="conectado">Lembrar-me</label>
+                    <a id="forgetpassword" href="#">Esqueceu sua senha?</a>
+                </div>
+
+                <!-- <a id="forgetpassword" href="#">Esqueceu sua senha?</a> -->
+
+                <button type="submit" id="login">Login</button>
+
+        </form>
+
+        <p id="outraforma">Ou entre com</p>
+
+        <div class="redessociais">
+            <a href="#" class="icones"><i class="fa-brands fa-google"></i></a>
+            <a href="#" class="icones"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="icones"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="icones"><i class="fa-brands fa-linkedin"></i></i></a>
+        </div>
+
+        <div id="criarconta">
+            <p id="outraforma">Não tem uma conta?</p>
+            <a id="registre" href="cadastro.html">Registre-se</a>
+        </div>
+    </div>
+</body>
+</html>

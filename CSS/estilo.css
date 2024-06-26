@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* font-family: "Libre Baskerville", serif;*/
+/* font-family: "Special Elite", system-ui; */
+/* font-family: "Bebas Neue", sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Libre Baskerville", serif;
+    /* font-family: "Special Elite", system-ui; */
+    /* font-family: "Bebas Neue", sans-serif; */
+}
+
+body{
+    font-family: "Libre Baskerville", serif;
+    /* background-color: #a1e0ed; */
+    background: linear-gradient(90deg, rgba(179,221,233,1) 0%, rgba(167,214,228,1) 100%);
+}
+
+.navbar{
+    /* background-color: #a1e0ed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 15px;
+
+}
+
+.logo{
+   /* border: 1px solid red; */
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.logo h1{
+    font-family: "Special Elite", system-ui;
+    font-size: 45px;
+    display: block;
+    position: relative;
+    top: 4px;
+}
+
+.menu{
+
+    /* border: 1px solid blue; */
+    /* padding: 15px; */
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    margin-right: 35px;
+    border-radius: 35px;
+    display: block;
+    min-width: fit-content;
+    text-align: left;
+
+}
+
+.menu a:hover{
+    background: #fceaa2;
+    color: black;
+}
+
+
+
+.header{
+    /* background: #a1e0ed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 10% 0 10%;
+    flex-wrap: wrap;
+
+
+}
+
+.slogan {
+
+    /* border: 3px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    margin: 0 auto;
+}
+
+.slogan h2 {
+    text-align: center;
+}
+
+.slogan p{
+    font-family: "Libre Baskerville", serif;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+#ideia{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+
+#papel{
+    padding: 25px;
+    font-family: "Special Elite", system-ui;
+    font-size: 100px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.img-header {
+    /* border: 3px solid orange; */
+    margin: 0 auto;
+}
+
+#img-principal{
+    width: auto;
+    max-height: 700px;
+}
+
+#sectionum{
+    margin-top: 60px;
+}
+
+
+
+/* =============================================== CSS PRODUTOS =============================================== */
+.produtos{
+    /* background: #a1e0ed; */
+    margin: 0 10% 0 10%;
+
+}
+
+.produtos > .cardpai:nth-child(odd){
+    flex-wrap: wrap-reverse;
+}
+
+
+#nossosprodutos{
+    color: black;
+    text-align: center;
+    /* font-family: "Bebas Neue", sans-serif; */
+    font-family: "Special Elite", system-ui;
+    /* letter-spacing: 5px; */
+    font-size: 55px;
+}
+
+.cardpai{
+    /* border: 2px solid red; */
+    padding: 3px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+/*  */
+
+#cartaovisita{
+    border-radius: 5%;
+    transition: all 1s;
+    align-items: center;
+    height: 70%;
+    width: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+
+
+
+
+
+}
+
+.card {
+    /* background-color: #fddd73; */
+    height: 800px;
+
+    border-radius: 5%;
+    text-align: center;
+    /* margin-top: 15px; */
+    margin: 1%;
+    /* padding: 2%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.textocard{
+    background: white;
+    border: 2px solid black;
+    padding: 25px;
+    border-radius: 2%;
+    flex-grow: 1;
+    max-width: 800px;
+
+}
+
+.textocard h3{
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+}
+
+.textocard p{
+    text-align: justify;
+
+}
+
+#cartaovisita:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+.paiflyer{
+    border: 2px solid rgb(8, 160, 33);
+    padding: 3px;
+    height: 1025px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+
+
+}
+
+.cardflyer {
+    /* background-color: #fddd73; */
+    height: 800px;
+
+    border-radius: 5%;
+    text-align: center;
+    margin: 1%;
+    /* padding: 2%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#flyer{
+    border-radius: 5%;
+    transition: all 1s;
+    align-items: center;
+    height: 70%;
+    width: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+#flyer:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+
+
+.cardadesivo {
+    /* background-color: #fddd73; */
+    border: 1px solid purple;
+    height: 800px;
+    border-radius: 5%;
+    text-align: center;
+    margin: 1%;
+    /* padding: 2%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#adesivo{
+    border-radius: 5%;
+    transition: all 1s;
+    /* align-items: center; */
+    height: 70%;
+    width: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+}
+
+#adesivo:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#diferencial{
+    margin-top: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.aboutus{
+    /* border: 3px solid blue; */
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: fit-content;
+}
+
+.diferencial{
+    display: block;
+    width: 100%;
+
+    /* border: 1px solid deeppink; */
+}
+
+.topicopai{
+    /* border: 3px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px 0 0 0;
+
+
+
+}
+
+.topico{
+    background-color: #fddd73;
+    width: 30%;
+    border-radius: 5%;
+    text-align: center;
+    margin-top: 15px;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    cursor: pointer;
+
+    min-height: 500px;
+    min-width: 400px;
+
+
+}
+
+.topico:hover .paragrafotopico{
+    display: block;
+
+}
+
+
+
+.topico h3{
+    margin-top: 25px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
+
+.paragrafotopico{
+    display: none;
+    text-align: center;
+}
+
+
+
+footer{
+    height: fit-content;
+    margin-top: 60px;
+     /* background-color: #a1e0ed; */
+}
+
+
+/* AQUI EU TINHA FEITO O FOOTER ATRAVES DO FLEX */
+
+/* .containerfooter{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navfooter {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.lista{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lista a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+    padding: 7px 0 7px 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.hfooter h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#redessociais{
+    margin-top: 2em;
+
+}
+
+.redessociais{
+    margin-top: 25px;
+    text-decoration: none;
+
+}
+
+.redessociais a{
+    margin-right: 30px;
+    text-decoration: none;
+
+}
+
+a.icones{
+    text-decoration: none;
+}
+
+a.redessociais{
+    text-decoration: none;
+} */
+
+.navfooter{
+    padding: 10px;
+    line-height: 35px;
+}
+
+.containerfooter{
+    margin: 5vh 10% 5vh 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.hfooter{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "Libre Baskerville", serif;
+    margin-bottom: 25px;
+}
+.hfooter h3{
+    margin-bottom: 10px;
+}
+
+.navfooter a, p{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+.icones{
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.navgrid{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+}
+
+li{
+    list-style-type: none;
+}
+
+#modal{
+  position: fixed;
+  margin: auto;
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 30px;
+  z-index: 900;
+
+}
+#modal a{
+    text-decoration: none;
+    color: #3b3b3b;
+    font-size: 18px;
+    text-align: center;
+
+}
+#modal h1{
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+#modalform{
+  position: relative;
+  top: -25px;
+  left: 97%;
+}
+
+#modalform button{
+    padding: 5px;
+  border: none;
+  background: red;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+
+}
+#modalform button:hover{
+  cursor: pointer;
+}
+
+#canaisatendimento{
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    footer{
+
+    }
+
+    }
+
+@media only screen and (max-width: 900px) {
+    }
+
+@media only screen and (max-width: 756px) {
+    .containerfooter{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+
+    }
+@media only screen and (max-width: 500px) {
+    .containerfooter{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+
+    }
+
+
+    }
